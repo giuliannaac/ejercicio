@@ -1,4 +1,4 @@
-df = pd.read_csv("https://raw.githubusercontent.com/giuliannaac/ejercicio/main/Credit.csv")
+df = pd.read_csv("https://github.com/giuliannaac/ejercicio/blob/ef67e6ec174f26cb04a9a25eb3aca9edceb42334/Credit.csv")
 st.title("Titulo x")
 df.drop(columns=["Unnamed: 0"], inplace=True)
 # Ver información general del dataset
