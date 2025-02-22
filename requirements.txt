@@ -4,3 +4,4 @@ streamlit
 statsmodels.stats.outliers_influence
 sweetviz
 IPython.display
+seaborn
