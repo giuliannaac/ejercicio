@@ -1,7 +1,6 @@
 pandas
-numpy
 matplotlib.pyplot
-seaborn
+streamlit
 statsmodels.stats.outliers_influence
 sweetviz
 IPython.display
