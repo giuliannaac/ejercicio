@@ -1,4 +1,5 @@
-df = pd.read_csv("https://github.com/giuliannaac/ejercicio/blob/main/Credit.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/giuliannaac/ejercicio/main/Credit.csv")
+st.title("Titulo x")
 df.drop(columns=["Unnamed: 0"], inplace=True)
 # Ver información general del dataset
 df.info()
@@ -26,13 +27,3 @@ for i, var in enumerate(categorical_vars, 1):
     plt.ylabel("Balance")
 plt.tight_layout()
 plt.show()
-
-# Análisis de colinealidad (VIF) Se excluyen las variables categóricas porque el VIF solo se aplica a variables numéricas
-num_vars = ["Income", "Limit", "Rating", "Cards", "Age", "Education"]
-X = df[num_vars]
-
-# Calcular VIF
-vif_data = pd.DataFrame()
-vif_data["Variable"] = X.columns
-vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
-
